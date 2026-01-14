@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TopicAtlas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>TopicAtlas</h1>
+        <p>Cluster docs into themes with k-means.</p>
+      </header>
+      <section class="panel">
+        <label>Number of clusters <input id="kInput" type="number" value="3" /></label>
+        <div class="actions">
+          <button id="clusterButton">Cluster docs</button>
+          <button id="seedButton" class="ghost">Load sample docs</button>
+        </div>
+      </section>
+      <section class="panel">
+        <h2>Clusters</h2>
+        <div id="results" class="clusters"></div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
